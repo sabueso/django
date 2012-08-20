@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<title>KeComo</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link href="media/css/kecomo/styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+</script>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+	<div class="header"><a href="http://www.kecomo.com/"><img src="media/img/kecomo/logo_320.png" alt="" width="235" height="55"/></a></div>
+
+	<div class="content">    
+		<div class="menu"><span class="menu2"><a href="http://www.kecomo.com/">BUSCADOR</a></span><a href="/alta">AÑADIR NUEVO</a><a href="#">ACERCA DE</a></div>
+		<div class="formfields">
+        Has elegido <b> {{provincias}} / {{poblaciones}}<b>
+
+        </div>
+        <div class="formfields">
+        </div>
+        <form method="post"action="" >
+        <div class="formfields">
+	{%for field in formulario%}
+	Introduzca el nombre (o parte) del Restaurante:<br />
+	{{field}}<br />
+	{%endfor%}
+        </div>
+        <div class="search">
+	<input type="submit" value="Buscar" />
+	</form>
+		</div>
+		<div class="title_last_rests">&Uacute;ltimos Restaurantes Anadidos</div>
+        {%for rest in ultimosrestaurantes%}
+		<div class="last_rests">        
+			<span class="last_rests_icon"><img src="media/img/kecomo/fork.png" alt="" width="16" height="16" class="valign"/></span><span class="name_last_rests"><a href="/detalle/{{rest.id}}" class="links">{{rest.nombre}}</a></span><span class="prov_last_rests">({{rest.poblacionasoc}})</span>        
+        {%endfor%}
+		</div>       
+
+	</div>
+    
+	<div class="footer">&copy; Copyright 2010, Kecomo</div>
+                      
+</div>
+
+</body>
+</html>

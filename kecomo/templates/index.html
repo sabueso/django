@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<title>KeComo</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link href="media/css/kecomo/styles.css" rel="stylesheet" type="text/css" />
+
+<!--<script type="text/javascript">
+
+var msg="Kecomo BETA!";
+document.open();
+document.write(msg);
+document.close();
+var valuestr;
+valuestr=value;
+
+</script> -->
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+	<div class="header"><a href="http://www.kecomo.com/"><img src="media/img/kecomo/logo_320.png" alt="" width="235" height="55"/></a></div>
+
+	<div class="content">    
+
+		<div class="menu"><span class="menu2"><a href="http://www.kecomo.com/">BUSCADOR</a></span><a href="/alta">AÑADIR NUEVO</a><a href="#">ACERCA DE</a></div>
+		<div class="formfields">
+			<select name="selprov" id="select"  onchange="javascript:window.open(this.options[this.selectedIndex].value+'\/','_top')" class="input_select">
+				<option value="" >Selecciona Provincia</option>
+				{%for provincia in provincias%}
+				<option>{{provincia}}</option> 
+				{%endfor%}
+			</select>
+        </div>
+        <div class="formfields">
+        <!---<select name="select2" id="select2"  onchange="window.open(this.options[this.selectedIndex].value+'\/','_top')" class="input_select">
+        <option selected  value="" >Selecciona Poblacion</option>
+        {%for poblacion in poblaciones%}
+        <option>{{poblacion}}</option>
+        {%endfor%}
+        </select>-->
+        </div>
+        <form method="post"action="" >
+   		<div class="formfields_alta_title">Introduzca el nombre (o parte) del Restaurante:</div>
+        <div class="formfields">
+        {%for field in formulario%}
+        {{field}}
+        {%endfor%}
+        </div>
+        <div class="search">
+        <input type="submit" value="Buscar" /></div>
+        </form>
+		<div class="title_last_rests">&Uacute;ltimos Restaurantes Anadidos</div>
+        {%for rest in ultimosrestaurantes%}
+		<div class="last_rests">        
+			<span class="last_rests_icon"><img src="media/img/kecomo/fork.png" alt="" width="16" height="16" class="valign"/></span><span class="name_last_rests"><a href="/detalle/{{rest.id}}" class="links">{{rest.nombre}}</a></span><span class="prov_last_rests">({{rest.poblacionasoc}})</span>     
+		</div>{%endfor%}       
+
+	</div>
+    
+                      
+<!--	<div class="footer">&copy; Copyright 2010, Kecomo</div>
+ -->
+
+</div>
+
+
+
+</body>
+</html>

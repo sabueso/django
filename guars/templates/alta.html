@@ -1,0 +1,14 @@
+<html>
+<form method=post>{% csrf_token %}
+{% for i in form %}
+        {{ i.label }}<br />
+        {{ i }}
+        {% for e in i.errors %}
+            {{ e }}
+        {% endfor %}
+        <br />
+{%endfor%}
+<input type='submit' value='Enviar'>
+</form>
+</html>
+

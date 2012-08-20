@@ -1,0 +1,1 @@
+celeryd --loglevel=INFO

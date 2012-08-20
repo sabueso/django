@@ -1,0 +1,19 @@
+from django.conf.urls.defaults import *
+# Uncomment the next two lines to enable the admin:
+from django.contrib import admin
+admin.autodiscover()
+urlpatterns = patterns('',
+        (r'^admin/(.*)', admin.site.root),
+	(r'^$', 'w4rsforo.foro.views.index'),
+	(r'^login/$','django.contrib.auth.views.login',{'template_name': 'foro/login.html'}),
+	(r'^desloguearse','w4rsforo.foro.views.desloguearse'),
+	(r'^logout/$','django.contrib.auth.views.logout'),
+	(r'^registro','w4rsforo.foro.views.registro'),
+	(r'^accounts/', include('registration.backends.default.urls')),
+#	(r'^comentarios/(?P<foronombre>\w.+)/(?P<subforonombre>\w.+)/(?P<numerohilo>\d+)','w4rsforo.foro.views.comentarios'),
+	(r'^(?P<foronombre>\w+)/$','w4rsforo.foro.views.listasubforos'),
+	#(r'^(?P<foronombre>\w.+)/(?P<subforonombre>\w.+)/$','w4rsforo.foro.views.listahilos'),
+	#(r'^(?P<foronombre>\w.+)/(?P<subforonombre>\w.+)/(?P<numerohilo>\d+)','w4rsforo.foro.views.hilo'),
+	(r'^(?P<foronombre>\w+)/(?P<subforonombre>\w+)/$','w4rsforo.foro.views.listahilos'),
+        (r'^(?P<foronombre>\w+)/(?P<subforonombre>\w+)/(?P<numerohilo>\d+)','w4rsforo.foro.views.hilo'),
+	(r'^tinymce/', include('tinymce.urls')),)

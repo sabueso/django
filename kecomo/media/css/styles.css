@@ -1,0 +1,159 @@
+body {
+	background-color: #000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	background-attachment: fixed;
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*---------------------------------------------------------------- TEXTO ----------*/
+
+.text9 {font-size: 9px;}
+.text10 {font-size: 10px;}
+.text11 {font-size: 11px;}
+.text12 {font-size: 12px;}
+.text13 {font-size: 13px;}
+.text14 {font-size: 14px;}
+.text15 {font-size: 15px;}
+.text16 {font-size: 16px;}
+
+/*---------------------------------------------------------------- COLORS - ESTILOS TEXTOS----------*/
+
+.brown_build {color: #612900;}
+.brown_soft {color: #e1cba2;}
+.brown_soft2 {color: #b08524;}
+.brown_soft3 {color: #f4dba3;}
+.brown_soft4 {color: #74490b;}
+.brown_text {color: #441d00;}
+.green_hard {color: #1a6220;}
+.red_hard {color: #932521;}
+.nowrap {white-space: nowrap; }
+.white {color: #FFFFFF;}
+.justify {text-align: justify;}
+.bold {font-weight: bold;}
+.upper {text-transform: uppercase;}
+.interlineat {line-height: 13px;}
+.interlineat2 {line-height: 10px;}
+
+.bottomline {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #BB9959;
+}
+
+/*---------------------------------------------------------------- FONDOS CAJAS ----------*/
+
+.box_stones {
+	background-attachment: scroll;
+	background-image: url(../img/stones.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.box_forums {
+	background-attachment: scroll;
+	background-image: url(../img/background_table.jpg);
+	background-repeat: repeat-y;
+	background-position: center top;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/*---------------------------------------------------------------- LINKS ----------*/
+
+a {outline:0;}
+
+a.underline_white {border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #FFFFFF;}
+a.underline_browntext {border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #612900;}
+
+a.underline {text-decoration: none;border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #81652d;}
+a.underline:hover {text-decoration: none;position: relative;left: 1px;top: 1px;}
+
+a.underlineover:hover {border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #612900;}
+a.underlineoverwhite:hover {border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #ffffff;}
+
+a.movement {text-decoration: none;}
+a.movement:hover {text-decoration: none;position: relative;left: 1px;top: 1px;}
+
+/*---------------------------------------------------------------- MARGINS ----------*/
+
+.marginleft5 {margin-left: 5px;}
+.marginleft10 {margin-left: 10px;}
+.marginleft15 {margin-left: 15px;}
+.marginleft20 {margin-left: 20px;}
+.marginleft25 {margin-left: 25px;}
+.marginleft30 {margin-left: 30px;}
+.marginleft40 {margin-left: 40px;}
+.marginright5 {margin-right: 5px;}
+.marginright10 {margin-right: 10px;}
+.marginright15 {margin-right: 15px;}
+.marginright20 {margin-right: 20px;}
+.marginright25 {margin-right: 25px;}
+.marginbottom1 {margin-bottom: 1px;}
+.marginbottom2 {margin-bottom: 2px;}
+.marginbottom3 {margin-bottom: 3px;}
+.marginbottom4 {margin-bottom: 4px;}
+.marginbottom5 {margin-bottom: 5px;}
+.marginbottom7 {margin-bottom: 7px;}
+.marginbottom10 {margin-bottom: 10px;}
+.marginbottom15 {margin-bottom: 15px;}
+.marginbottom20 {margin-bottom: 20px;}
+.marginbottom25 {margin-bottom: 25px;}
+.marginbottom30 {margin-bottom: 30px;}
+.marginbottom35 {margin-bottom: 35px;}
+.marginbottom40 {margin-bottom: 40px;}
+.margintop3 {margin-top: 3px;}
+.margintop5 {margin-top: 5px;}
+.margintop8 {margin-top: 8px;}
+.margintop10 {margin-top: 10px;}
+.margintop13 {margin-top: 13px;}
+.margintop15 {margin-top: 15px;}
+.margintop20 {margin-top: 20px;}
+.margintop30 {margin-top: 30px;}
+.margintop40 {margin-top: 40px;}
+
+
+/*---------------------------------------------------------------- PADDINGS ----------*/
+
+.paddingleft1 {padding-left: 1px;}
+.paddingleft3 {padding-left: 3px;}
+.paddingleft5 {padding-left: 5px;}
+.paddingleft8 {padding-left: 8px;}
+.paddingleft10 {padding-left: 10px;}
+.paddingleft15 {padding-left: 15px;}
+.paddingleft20 {padding-left: 20px;}
+.paddingleft45 {padding-left: 45px;}
+.paddingright1 {padding-right: 1px;}
+.paddingright3 {padding-right: 3px;}
+.paddingright5 {padding-right: 5px;}
+.paddingright10 {padding-right: 10px;}
+.paddingright15 {padding-right: 10px;}
+.paddingright20 {padding-right: 20px;}
+.paddingright30 {padding-right: 30px;}
+.paddingbottom1 {padding-bottom: 1px;}
+.paddingbottom2 {padding-bottom: 2px;}
+.paddingbottom3 {padding-bottom: 3px;}
+.paddingbottom5 {padding-bottom: 5px;}
+.paddingbottom10 {padding-bottom: 10px;}
+.paddingbottom15 {padding-bottom: 15px;}
+.paddingbottom20 {padding-bottom: 20px;}
+.paddingtop1 {padding-top: 1px;}
+.paddingtop3 {padding-top: 3px;}
+.paddingtop5 {padding-top: 5px;}
+.paddingtop10 {padding-top: 10px;}
+.paddingtop15 {padding-top: 15px;}
+.paddingtop20 {padding-top: 20px;}
+.paddingtop30 {padding-top: 30px;}
+.paddingtop50 {padding-top: 50px;}
+
+#sin_margen{
+margin-bottom: 0px;
+}

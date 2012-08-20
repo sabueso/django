@@ -1,0 +1,17 @@
+<html>
+<center><b>Tabla de cambios</b></center>
+<table border=1 >
+<tr>
+<td><b>Fecha</b>
+<td><b>Asunto</b>
+<td><b>Descripcion</b>
+</tr>
+{%for i in cambios%}
+<tr>
+<td>{{i.fecha}}
+<td>{{i.asunto}}
+<td>{% autoescape off %}{{ i.descripcion }}{% endautoescape %}
+{%endfor%}
+</tr>
+</table>
+</html>

@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<script type="text/javascript" src="/media/js/prototype.js"></script>
+<title>W4RS</title>
+</head>
+<body>
+<script type="text/javascript">
+new Ajax.PeriodicalUpdater('container_home', '/aldea/{{aldea.id}}', {method: 'get', frequency: 15 });
+</script>
+
+<div id="container_home">
+
+{% include "header.html" %}
+
+	<div id="content_home"> 
+    {% include "events_troops.html" %}     
+    {% include "resources.html" %} 
+    {% include "villages_levels.html" %}
+    {% include "village.html" %} 
+	</div>
+    
+</div>
+
+</body>
+
+</html>

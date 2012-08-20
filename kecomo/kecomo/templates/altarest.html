@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<title>KeComo</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link href="media/css/kecomo/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+	<div class="content">
+	<div class="header"><a href="http://www.kecomo.com/"><img src="media/img/kecomo/logo_320.png" alt="" width="235" height="55"/></a></div>
+	<div class="menu"><a href="http://www.kecomo.com/">BUSCADOR</a><a href="/alta">AÑADIR NUEVO</a><a href="#">ACERCA DE</a></div>
+    
+	<form method="post"action="" >
+      <p>{%for field in formset%}
+        {{field.label_tag}}<br />
+      {{field.label}}&lt;br /&gt;adfdafasfas</p>
+      <p>{{field}}<br />
+        {%endfor%}
+        <input type="submit" value="Crear" />
+      </p>
+    </form>    
+    
+	
+	<div class="footer">&copy; Copyright 2010, Kecomo</div>
+
+	</div>
+                      
+</div>
+
+
+<!--<div id="wrapper">
+
+  <div id="header"><div><a href="http://www.kecomo.com/"><img src="/media/img/kecomo/logo_320.png" alt="" width="235" height="55" border="0" /></a></div></div>
+	<div id="menu"><a href="index.html" class="menuprinsupoff">Buscador</a><a href="/alta" class="menuprinsup">A&ntilde;adir Nuevo</a><a href="#" class="menuprinsupoff">Acerca de</a></div>
+
+	<div id="content">
+    
+		<div class="min-width">
+
+<form method="post"action="" >
+{%for field in formset%}
+{{field.label_tag}}<br />
+{{field}}<br />
+{%endfor%}
+<input type="submit" value="Crear" />
+</form>
+
+		</div>
+
+  </div>
+
+  <div id="footer">&copy; Copyright 2010, Kecomo </div>        
+        	
+</div> -->
+
+</body>
+
+</html>

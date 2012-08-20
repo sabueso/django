@@ -1,0 +1,39 @@
+/* Scroll Bar Master Styling Starts Here */
+/* All comments can be freely removed from the css */
+
+.scrollgeneric {
+position: absolute;
+top: 0; left: 0;
+}
+
+.vscrollerbase {
+width: 10px;
+background-color: #906e50;
+border: 0px solid #906e50;
+}
+.vscrollerbar {
+width: 10px;
+background-color: #c8976c;
+}
+
+.scrollerjogbox {
+width: 10px;
+height: 10px;
+top: auto; left: auto;
+bottom: 0px; right: 0px;
+background-color: gray;
+}
+
+
+#mycustomscroll {
+	border: 0px solid #fff;
+/* Typical fixed height and fixed width example */
+width: 215px;
+height: 107px;
+overflow: auto;
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+ text-align:center; font-size: 11px;color: #441d00;
+ padding:3px;
+}
+

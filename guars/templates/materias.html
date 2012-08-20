@@ -1,0 +1,82 @@
+<link href="../media/css/guars/styles.css" rel="stylesheet" type="text/css" />
+<link href="../media/css/guars/styles_img.css" rel="stylesheet" type="text/css" />
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<script type="text/javascript" src="/media/js/prototype.js"></script>
+<title>W4RS</title>
+</head>
+<body>
+<script type="text/javascript">
+new Ajax.PeriodicalUpdater('a', '/descmateria/{{materia.id}}', {method: 'get', frequency: 3 });
+</script>
+    
+<div class="builds_top"></div>
+	<div class="builds_center">
+		<div class="builds_content">
+        	<div class="builds_leftbar">        
+        
+        	<div class="builds_title">{{materia.materiapert.materiaoriginal.get_tipo_display}}</div><div class="builds_title_level">(NIVEL {{materia.nivelactual}})</div>
+            <div class="clearfloat"></div>
+            <div class="builds_desc">{{materia.materiapert.materiaoriginal.descripcion}}. Puedes subir   hasta nivel 20.</div>
+            <div class="builds_subtitle">Produccion de comida</div>
+            <div class="clearfloat"></div>            
+            <div class="builds_levels">Grado {{materia.nivelactual}}</div><div class="builds_levels_info">Produccion de comida actual: <b>{{matriztempomateriaactual.incremento}}</b> por hora</div>
+            <div class="clearfloat"></div> 
+			<div class="builds_levels">Grado {{proximonivel}}</div><div class="builds_levels_info">Produccion de comida siguiente nivel: <b>{{matriztempomateria.incremento}}</b>	por hora</div>
+<div class="clearfloat"></div>
+
+</div>
+
+<div class="builds_rightbar">
+	<div class="builds_rightbar_img"><img src="../media/img/guars/edificios/{{materia.materiapert.materiaoriginal.imagendesc}}" width="200" height="150" /></div>
+    <div class="builds_subtitle">Costes ampliacion a nivel {{proximonivel}}</div>
+    
+    <div class="box_resourcesb">
+    	<div class="box_resourcesb_icon">
+        	<div class="box_resourcesb_img"><img src="../media/img/guars/null.gif" class="materiasg_madera" /></div>
+            <div class="box_resourcesb_text">{{matriztempomateria.costebosque}}</div>
+        </div>
+		<div class="box_resourcesb_icon">
+        	<div class="box_resourcesb_img"><img src="../media/img/guars/null.gif" class="materiasg_barro" /></div>
+            <div class="box_resourcesb_text">{{matriztempomateria.costebarrizal}}</div>
+        </div>
+		<div class="box_resourcesb_icon">
+        	<div class="box_resourcesb_img"><img src="../media/img/guars/null.gif" class="materiasg_hierro" /></div>
+            <div class="box_resourcesb_text">{{matriztempomateria.costemina}}</div>
+        </div>
+		<div class="box_resourcesb_icon">
+        	<div class="box_resourcesb_img"><img src="../media/img/guars/null.gif" class="materiasg_comida" /></div>
+            <div class="box_resourcesb_text">{{matriztempomateria.costehuerto}}</div>
+        </div>
+        <div class="clearfloat"></div>
+		<div class="box_resourcesb_icon">
+        	<div class="box_resourcesb_img"><img src="../media/img/guars/null.gif" class="materiasg_consumo" /></div>
+            <div class="box_resourcesb_text">{{matriztempomateria.consumocereal}}</div>
+        </div>
+		<div class="box_resourcesb_icon2">
+        	<div class="box_resourcesb_img2"><img src="../media/img/guars/null.gif" class="materiasg_tiempo" /></div>
+            <div class="box_resourcesb_text">{{tiempocrecimiento}}        </div>
+</div>
+    </div>
+    
+    <div class="clearfloat"></div>
+
+{%if construyendo == "si" %}
+<div class="noresources">EN CONSTRUCCION!</div>
+
+{%else%}
+	{%if actualizable == "si" %}
+    <div class="builds_rightbar_button"><table align="center" class="button_med"><tr><td class="din01"></td><td class="din02"></td><td class="din03"></td></tr><tr><td class="din04"></td><td class="din05"><a href="{{site.url}}/subirnivel/{{aldea.id}}/{{materia.id}}">Ampliar {{materia.get_tipo_display|lower}} a nivel {{proximonivel}}</a></td><td class="din06"></td></tr><tr><td class="din07"></td><td class="din08"></td><td class="din09"></td></tr></table></div>
+	<div class="clearfloat"></div>
+	{%else%}
+	<div class="noresources">No tienes suficientes materias!</div>
+	{%endif%}  
+{%endif%}
+</div>
+
+		</div>
+        <div class="clearfloat"></div>
+	</div>
+<div class="builds_bottom"></div>
+

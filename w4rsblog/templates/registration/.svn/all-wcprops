@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/w4rsblog/!svn/ver/1/templates/registration
+END
+registration_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/w4rsblog/!svn/ver/1/templates/registration/registration_form.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/w4rsblog/!svn/ver/1/templates/registration/login.html
+END

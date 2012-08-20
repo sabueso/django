@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/w4rsforo/!svn/ver/1/templates/foro
+END
+hilos.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/w4rsforo/!svn/ver/5/templates/foro/hilos.html
+END
+subforos.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/w4rsforo/!svn/ver/5/templates/foro/subforos.html
+END
+comentarios.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/w4rsforo/!svn/ver/3/templates/foro/comentarios.html
+END
+detallehilo.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/w4rsforo/!svn/ver/5/templates/foro/detallehilo.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/w4rsforo/!svn/ver/5/templates/foro/index.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/w4rsforo/!svn/ver/3/templates/foro/login.html
+END

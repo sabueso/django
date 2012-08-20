@@ -1,0 +1,253 @@
+<html>
+<link href="../../../../media/css/styles.css" rel="stylesheet" type="text/css" />
+<title>Foro W4RS</title>
+	{% autoescape off%}
+ <table width="100%" border="0" cellpadding="0" cellspacing="0" class="marginbottom5 box_stones">
+  <tr>
+    <td colspan="3" align="center"><table width="900" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="3"><a href="http://foro.w4rs.com/"><img src="../../../media/img/header.png" width="900" height="75" border="0"></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+ <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+     <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+   </tr>
+ </table>
+ <table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+   <tr>
+     <td colspan="3" class="text11 brown_text bold">Si es tu primera visita a los foros no te olvides de revisar el <a href="#" class="bold red_hard movement">FAQ</a>.  Tal vez tengas que <a href="#" class="bold red_hard movement">registrarte</a> antes de que puedas participar: da clic en la liga de registrarse para continuar.  Para comenzar a ver los mensajes selecciona el foro que deseas de los que aparecen abajo.</td>
+   </tr>
+ </table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+   <tr>
+     <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+   </tr>
+ </table>
+ <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+     <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+   </tr>
+ </table>
+ <table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+   <tr>
+     <td height="25" align="right">{% if user.is_authenticated %} <a href="http://foro.w4rs.com/desloguearse" class="movement red_hard text12 bold paddingright10">Cerrar sesión</a> {% else %}
+       <form action="/login/" method="post" accept-charset="utf-8" id="sin_margen">
+         <label for="username" class="text12 bold brown_text">Username:</label>
+         <input type="text" name="username" value="" id="username" class="text12 brown_text"/>
+         <label for="password" class="text12 bold brown_text paddingleft5">Password:</label>
+         <input type="password" name="password" value="" id="password"  class="text12 brown_text"/>
+         <input type="submit" class="text11" value="Login">
+       </form>
+       {% endif %}</td>
+   </tr>
+ </table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+   <tr>
+     <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+   </tr>
+ </table>
+<table width="900" border="0" align="center" cellpadding="5" cellspacing="0" class="marginbottom10">
+   <tr>
+     <td class="text12 brown_text bold">Foro W4rs &gt; Subforo &gt; Hilos &gt; Comentarios del Hilo</td>
+   </tr>
+ </table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+     <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+   </tr>
+ </table>
+{% if hiloenfoco %}
+		{% for objeto in hiloenfoco %}
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+   <tr>
+     <td><table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#CCB382">
+       <tr>
+         <td colspan="2" class="text11 brown_soft4 bold">{{objeto.fecha}}</td>
+        </tr>
+       <tr>
+         <td width="20%" align="center" bgcolor="#e3d5ba"><table border="0" cellpadding="0" cellspacing="0">
+           <tr>
+             <td class="text11 brown_text bold paddingleft3">{{objeto.usuario}}</td>
+             </tr>
+           <tr>
+             <td class="text11 brown_text paddingbottom5 paddingleft3">Rango de usuario</td>
+             </tr>
+           <tr>
+             <td class="paddingbottom5"><img src="../../../media/img/avatar1.jpg" width="150" height="150"></td>
+             </tr>
+           <tr>
+             <td class="text11 brown_text paddingleft3">Registrado: April-2008</td>
+             </tr>
+           <tr>
+             <td class="text11 brown_text paddingleft3">Posts: 221</td>
+             </tr>
+          </table></td>
+         <td valign="top" bgcolor="#e3d5ba"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+           <tr>
+             <td class="text12 brown_text bold bottomline">{{objeto.titulo}}</td>
+           </tr>
+           <tr>
+             <td class="text12 brown_text">{{objeto.cuerpo}} </td>
+           </tr>
+         </table></td>
+       </tr>
+       </table>
+</table>
+		{% endfor %}
+        
+        </hr>
+
+	{% if entradasfoco %}
+		{% for objeto in entradasfoco%}
+
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+	  <tr>
+	    <td><table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#CCB382">
+	      <tr>
+	        <td colspan="2" class="text11 brown_soft4 bold">{{objeto.fecha}}</td>
+          </tr>
+	      <tr>
+	        <td width="20%" align="center" bgcolor="#e3d5ba" class="text11 brown_text bold"><table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+	              <td class="text11 brown_text bold paddingleft3">{{objeto.usuario}}</td>
+              </tr>
+	            <tr>
+	              <td class="text11 brown_text paddingbottom5 paddingleft3">Rango de usuario</td>
+                </tr>
+	            <tr>
+	              <td class="paddingbottom5"><img src="../../../media/img/avatar2.jpg" width="150" height="50"></td>
+                </tr>
+	            <tr>
+	              <td class="text11 brown_text paddingleft3">Registrado: April-2008</td>
+                </tr>
+	            <tr>
+	              <td class="text11 brown_text paddingleft3">Posts: 221</td>
+                </tr>
+            </table></td>
+	        <td valign="top" bgcolor="#e3d5ba"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+	          <tr>
+	            <td class="text12 brown_text">{{objeto.cuerpo}} </td>
+              </tr>
+            </table></td>
+          </tr>
+	      </table>
+</table>
+{% endfor %}
+	{% else %}
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#CCB382">
+      <tr>
+        <td colspan="2" class="text11 brown_soft4 bold">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="20%" align="center" bgcolor="#e3d5ba" class="text11 brown_text bold">&nbsp;</td>
+        <td valign="top" bgcolor="#e3d5ba"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+          <tr>
+            <td class="text12 brown_text">No hay más comentarios.</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+</table>
+
+	{% endif %}
+
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+      <tr>
+        <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+      </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="5" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td class="text12 brown_text bold">Usuario visualizando: {{ user.username }}</td>
+  </tr>
+</table>
+
+{% if user.is_authenticated %}
+	{% for objeto in hiloenfoco%}
+		{% if objeto.abierto %}
+		
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+        <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+      <tr>
+        <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="marginbottom5">
+          <tr>
+            <td bgcolor="#CCB382" class="text15 bold brown_build paddingleft10">Escribe tu comentario.</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><form method="post" action="" id="sin_margen">
+    <table width="100%" border="0" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>
+			{{ formset.titulo}}
+			{{ formset.cuerpo}}
+				
+		<!--<textarea name="comentario" rows="10" cols="70">Escribe tu comentario000....</textarea>-->
+		<!---<form method="post" action="">
+		<table>
+		{{ formset }}
+		<input type="submit">
+		</table>
+		</form>-->
+        </td>
+        </tr>
+      <tr>
+        <td><input type="submit" class="text11"></td>
+      </tr>
+    </table>
+    </form></td>
+
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+        <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+		{% endif %}
+	{% endfor %}
+{% else %}
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+      <tr>
+        <td width="5%" align="center" class="text14 bold brown_build">Si te apetece comentar , <a href="#" class="bold red_hard movement">regístrate aquí!</a></td>
+      </tr>
+    </table>
+  </table>
+
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+{% endif %}
+
+{% else %}
+<p>!No hay Hilos disponibles con este titulo/id¡ Crea tu Hilo ahora!!!</p>
+{% endif %}
+
+{% endautoescape %}
+</html>
+

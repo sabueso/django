@@ -1,0 +1,73 @@
+<link href="../media/css/guars/styles.css" rel="stylesheet" type="text/css" />
+<link href="../media/css/guars/styles_img.css" rel="stylesheet" type="text/css" />
+
+<!--<script type="text/javascript" src="../media/js/guars/jquery-1.4.4.js"></script> -->
+<!--<script>
+	$(document).ready(function() {
+		$(".materias").hide(); 
+	});
+
+  	function chg(url){
+    	$(".materias").show().load("./materias.html");           Mostra y carrega el div ocult
+    	$(".village").hide();                         Oculta  el div que es veia
+  	}
+</script> -->
+
+
+
+<div class="village">
+
+	<!--Capa con los niveles de Materias y Edificios -->  
+	<div class="v_resources_numbers">        
+		<div id="muralla" class="ed_30"><div id="muralla_link"><img src="../media/img/guars/null.gif" usemap="#aldea" width="700" height="430"/></div></div>    
+		<div id="edpos_01"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco01"/></a></div></div>
+		<div id="edpos_02" class="ed_07"><div class="verticalalign"><a href="#"><img src="../media/img/guars/null.gif" class="link_edificio" title="hueco02"/></a></div></div>    
+		<div id="edpos_03"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco03"/></a></div></div>
+		<div id="edpos_04"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco04"/></a></div></div>
+		<div id="edpos_05"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco05"/></a></div></div>
+		<div id="edpos_06"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco06"/></a></div></div>
+		<div id="edpos_07"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco07"/></a></div></div>
+		<div id="edpos_08"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco08"/></a></div></div>
+		<div id="edpos_09"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco09"/></a></div></div>
+		<div id="edpos_10"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco"  title="hueco10"/></a></div></div>
+		<div id="edpos_11"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco"  title="hueco11"/></a></div></div>
+		<div id="edpos_12"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco"  title="hueco12"/></a></div></div>
+		<div id="edpos_13"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco13"/></a></div></div>
+		<div id="edpos_14"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco14"/></a></div></div>
+		<div id="edpos_15"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco15"/></a></div></div>
+		<div id="edpos_16"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco16"/></a></div></div>
+		<div id="edpos_17"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco17"/></a></div></div>
+		<div id="edpos_18"><div class="verticalalign3"><a href="#"><img src="../media/img/guars/null.gif" class="link_hueco" title="hueco18"/></a></div></div>
+		<div id="edpos_19" class="ed_05"><div class="verticalalign2"><a href="http://guars.melocurro.com/edificios"><img src="../media/img/guars/null.gif" class="link_edificio" title="hueco19"/></a></div></div>
+		<div id="edpos_20" class="ed_08"><div class="verticalalign4"><a href="#"><img src="../media/img/guars/null.gif" class="link_plaza" title="hueco20"/></a></div></div>
+        
+		<div id="torreon1" class="torrehum_izqsup"><a href="muralla.html"><img src="../media/img/guars/null.gif" class="link_torreones" title="Torreon1"/></a></div>
+        <div id="torreon2" class="torrehum_dersup"><a href="muralla.html"><img src="../media/img/guars/null.gif" class="link_torreones" title="Torreon2"/></a></div>
+        <div id="torreon3" class="torrehum_izqinf"><a href="muralla.html"><img src="../media/img/guars/null.gif" class="link_torreones" title="Torreon3"/></a></div>
+        <div id="torreon4" class="torrehum_derinf"><a href="muralla.html"><img src="../media/img/guars/null.gif" class="link_torreones" title="Torreon4"/></a></div>
+    
+		{%for i in trigo%}
+		<div class="{{i.materiapert.posicionmapa}}"><a href="{{site.url}}/descmateria/{{aldea.id}}/{{i.id}}"><img src="../media/img/guars/null.gif" class="hole_off{{i.nivelactual}}" /></a></div>
+        {%endfor%}
+        {%for b in madera%}
+        <div class="{{b.materiapert.posicionmapa}}"><a href="{{site.url}}/descmateria/{{aldea.id}}/{{b.id}}"><img src="../media/img/guars/null.gif" class="hole_off{{b.nivelactual}}" /></a></div>
+		{%endfor%}
+        {%for c in metal%}
+        <div class="{{c.materiapert.posicionmapa}}"><a href="{{site.url}}/descmateria/{{aldea.id}}/{{c.id}}"><img src="../media/img/guars/null.gif" class="hole_off{{c.nivelactual}}" /></a></div>
+        {%endfor%}
+        {%for d in arcilla%}
+        <div class="{{d.materiapert.posicionmapa}}"><a href="{{site.url}}/descmateria/{{aldea.id}}/{{d.id}}"><img src="../media/img/guars/null.gif" class="hole_off{{d.nivelactual}}" /></a></div>
+        {%endfor%}
+	</div>
+    
+		<!-- Base diferente para cada Raza -->
+		<div class="v_race_base"><img src="../media/img/guars/null.gif" class="hum" width="700" height="430"/></div>
+		<!-- Base diferente para cada tipo de Aldea -->     
+		<div class="v_resources"><img src="../media/img/guars/null.gif" class="mat_4445" width="700" height="430"/></div>
+    
+		<map name="aldea" id="aldea"><area shape="poly" coords="526,298,457,354,446,378,376,398,279,391,231,349,189,306,166,297,97,280,52,264,27,234,23,211,51,158,157,124,206,96,257,44,346,25,380,29,434,39,464,63,490,92,520,112,552,127,608,144,622,117,576,111,535,99,491,55,438,14,369,6,314,8,262,24,171,97,42,130,9,180,6,241,35,294,173,339,259,418,350,426,441,419,493,367,540,334,651,296,688,270,694,204,683,158,633,121,618,145,655,163,680,195,680,223,655,262" href="muralla.html" title="Muralla"/>
+		</map> 
+    
+</div>
+
+ 

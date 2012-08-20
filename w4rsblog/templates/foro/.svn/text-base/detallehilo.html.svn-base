@@ -1,0 +1,31 @@
+<html>
+	{% autoescape off%}
+	<title>
+		Detalle de Hilo
+	</title>
+<center>
+	<b>Foro W4rs</b>||<b>Detalle Hilo</b></p>
+	
+{% if hiloenfoco %}
+	{% for objeto in hiloenfoco %}
+<b>Fecha:</b>{{objeto.fecha}} <b>Usuario:</b>{{objeto.usuario}}</p>
+<b>Asunto</b>:{{objeto.titulo}}</p>
+<b>Cuerpo:</b>{{objeto.cuerpo}}</p>
+<hr></hr>
+	{% endfor %}
+	<p>Usuario visualizando:</p> {{ user.username }}
+
+	{% if user.is_authenticated %}
+    		<p>Escribe tu comentario!!!!.</p>
+		<textarea name="comentario" rows="10" cols="70">Escribe tu comentario....</textarea>
+	{% else %}
+    		<p>Si te apetece comentar , registrate!!</p>
+	{% endif %}
+
+{% else %}
+<p>!No hay Hilos disponibles con este titulo/id¡ Crea tu Hilo ahora!!!</p>
+{% endif %}
+</center>
+{% endautoescape %}
+</html>
+

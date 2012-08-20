@@ -1,0 +1,16 @@
+<html>
+{% autoescape off%}
+<center>
+<b>Foro W4rs</b> || <b>SubForos</b>	
+{% if subforo %}
+{% for objeto in subforo %}
+<p>[<b><a href="http://localhost:8000/foro/{{objeto.foroprincipal.titulo}}/{{objeto.titulo}}">{{ objeto.titulo }}</a></b> ||| {{objeto.descripcion}} ||| {{objeto.fecha}} ||| {{objeto.usuario}}]</p>
+
+{% endfor %}
+{% else %}
+<p>!No hay articulos SubForos disponibles¡ Crea tu SubForo ahora!!!</p>
+{% endif %}
+</center>
+{% endautoescape %}
+</html>
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<title>W4RS</title>
+
+<link href="../media/css/guars/styles.css" rel="stylesheet" type="text/css" />
+<link href="../media/css/guars/flexcrollstyles.css" rel="stylesheet" type="text/css" />
+<!--<script type='text/javascript' src="../media/js/guars/flexcroll.js"></script>-->
+
+
+
+</head>
+
+<body>
+
+
+<div id="container_index">
+
+<div class="box_index_left">
+		<div class="box_index_titles"><img src="../media/img/guars/textos/queesw4rs.png"/></div>
+		<div class="box_index_text">W4RS es un juego de navegador a tiempo real con miles de personas y sin necesidad de descargas. Un mundo de fantas&iacute;a gobernado por Orcos, Elfos, Enanos y Humanos donde la habilidad de construir tus aldeas, luchar con tus tropas y tu estrategia, ser&aacute;n determinantes para el curso de tu victoria.</div>
+	</div>
+    
+	<div class="box_index_center">
+    
+		<div class="marginbottom3"><table align="center" class="button_med"><tr><td class="din01"></td><td class="din02"></td><td class="din03"></td></tr><tr><td class="din04"></td><td class="din05"><select name="select" id="select" class="select_login"><option>Selecciona el Servidor</option><option>Servidor 1</option><option>Servidor 2</option></select></td><td class="din06"></td></tr><tr><td class="din07"></td><td class="din08"></td><td class="din09"></td></tr></table></div>        
+
+        <form method="post" action="{% url django.contrib.auth.views.login %}" id="sin_margen">{% csrf_token %}
+      <div class="left"><table class="button_med"><tr><td class="din01"></td><td class="din02"></td><td class="din03"></td></tr><tr><td class="din04"></td><td class="din05">
+<input name="username" type="text" id="textfield2" value="Usuario" class="input_login" onfocus="javascript:if(this.value=='Usuario') {this.value='';}" onblur="javascript:if(this.value=='') {this.value='Usuario'}"/>
+</td><td class="din06"></td></tr><tr><td class="din07"></td><td class="din08"></td><td class="din09"></td></tr></table></div>
+
+        <div class="right"><table class="button_med"><tr><td class="din01"></td><td class="din02"></td><td class="din03"></td></tr><tr><td class="din04"></td><td class="din05">
+<input name="password" type="password" id="textfield4" value="Password" class="input_login" onfocus="javascript:if(this.value=='Password') {this.value='';}" onblur="javascript:if(this.value=='') {this.value='Password'}"/></td><td class="din06"></td></tr><tr><td class="din07"></td><td class="din08"></td><td class="din09"></td></tr></table></div>
+
+        <div class="clearfloat"></div>
+        <div class="box_index_enter"><input type="image" value="login" / src="../media/img/guars/botones/b_entra.png"></div>
+
+        </form>
+	</div>
+
+
+    
+<div class="box_index_right">
+		<div class="box_index_titles"><img src="../media/img/guars/textos/noticias.png"/></div>
+<div id='mycustomscroll' class='flexcroll'><strong>Estimados jugadores! </strong><br />
+                              El <strong>Servidor 1</strong> comienza el<strong> 7 de Abril</strong>. <br />
+                              El pre-registro estar&aacute; abierto desde el <strong>1 de Marzo</strong>. M&aacute;s info <a href="#" class="bold red_hard movement">aqu&iacute;</a>.<br />
+                              &middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;<br />
+                              Estimados jugadores! <br />
+                              El Servidor 1  comienza el 7 de Abril. <br />
+                              El pre-registro estar&aacute; abierto desde el<br />
+                              &middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;
+	</div>
+  </div>
+    
+	<div class="clearfloat"></div>
+    
+    <div class="box_index_buttons"><img src="../media/img/guars/botones/b_registrate2.png" width="160" height="50" border="0" /><img src="../media/img/guars/botones/b_guiarapida.png" width="171" height="50" border="0" /><img src="../media/img/guars/botones/b_foro.png" width="100" height="50" border="0" /></div>
+    
+</div>
+
+<!--<div class="footpanel"></div> -->
+
+
+
+</body>
+</html>

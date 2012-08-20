@@ -1,0 +1,68 @@
+@charset "iso-8859-2";
+body, html {margin:0; padding:0; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; background-color: #ECECEC; font-size: 11px; color:#333; /*width:320px;*/}
+
+/*---------------------------------------------------------------- DIVS HOME----------*/
+
+.header {background-color:#ECECEC; border: 0px solid #ccc; padding: 10px 0px 5px 15px; margin:0px 0px 20px 0px; }
+
+.container {width: 100%; background: #FFF;border: 0px solid #000;}
+	.content {background: #fff; border: 0px solid #ECECEC;margin: 0 auto;width:98%;padding:0px 0px 15px 0px;}
+
+.menu {background-color:#fff; margin:10px 0px 20px 0px; }
+	.menu a{border: 1px solid #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:3px 7px 3px 7px; background-color:#ECECEC; margin:3px 3px 3px 3px; text-decoration:none; font-weight:bold; color:#365104; font-size:12px;}
+	.menu a:hover{background-color:#fff;}
+	.menu2 a{border: 1px solid #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:3px 7px 3px 7px; background-color:#fff; margin:3px 3px 3px 3px; text-decoration:none; font-weight:bold; color:#365104;}
+
+	
+	
+/*.box1 {background-color:#fff; text-align:center;border: 0px solid #CCC;}*/
+.formfields {background-color:#ECECEC; border: 1px solid #CCC; margin:0px 0px 10px 0px; padding:5px 0px 5px 10px;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.search {background-color:#fff; border: 0px solid #CCC; display:block;margin:10px 0px 10px 0px;}
+
+
+/*.last_rests {background-color:#fff; text-align:center;border: 0px solid #CCC; margin:0px 0px 20px 0px;}*/
+.title_last_rests {font-weight:bold; color:#365104;font-size: 12px;background-color:#f3f3f3;padding:5px 0px 5px 10px; margin:0px 0px 10px 0px; font-size:14px;}
+
+.last_rests {background-color:#fff; border: 0px solid #CCC; margin:0px 0px 3px 0px;padding:3px 0px 3px 0px;}
+	.last_rests_icon {border: 1px solid #ccc;padding:3px; background-color:white; margin:0px 7px 5px 0px;}
+	.name_last_rests a{border: 0px solid #ccc;font-weight:bold; color:#333;font-size: 13px;padding:0px 5px 3px 0px; text-decoration:none; margin:0px 0px 5px 0px;}
+	.prov_last_rests {border: 0px solid #ccc;color:#333;font-size: 12px;padding:0px 0px 0px 0px;}
+
+
+
+/*---------------------------------------------------------------- DIVS ALTA ----------*/
+
+.formfields_alta {background-color:#ECECEC; border: 1px solid #CCC; margin:0px 0px 5px 0px; padding:5px 0px 5px 10px;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.formfields_alta_title {background-color:#fff; border: 0px solid #CCC; margin:0px 0px -1px 0px; padding:0px 0px 0px 10px; font-size:13px;}
+
+/*---------------------------------------------------------------- DIVS DETALLE ----------*/
+
+.detail_name {background-color:#fff; border: 0px solid #CCC; margin:0px 0px 5px 0px; padding:0px 0px 0px 10px; font-size:12px;}
+.detail_name a{color:#365104;text-decoration:none;}
+
+.detail_name_dyn {background-color:#fff; border: 0px solid #CCC; padding:0px 0px 0px 5px; font-size:12px; }
+
+
+
+
+
+.footer {position: fixed;bottom: 0; left: 0;z-index: 10; background: #ECECEC;border: 5px solid #fff;border-bottom: none; border-right: none;border-left: none;width: 100%;margin: 0 0%; padding:5px;text-align:center; color:#666;}
+
+/*.footer {background-color:#ECECEC; text-align:center;border: 1px solid #CCC; padding:5px 0px 5px 0px;}*/
+
+
+
+
+
+img {border:0px;}
+img.valign {vertical-align: middle;padding-bottom:2px;} 
+
+input[type='submit'] {background: #FFFFFF;border: 1px solid #999;font-size: 14px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;padding:2px 5px 2px 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+input[type='submit']:hover {background-color: #E1E1E1;cursor: pointer;}
+input[type='text']{font-size: 13px; width:95%; color:#666;padding:2px;}
+select{font-size: 13px; width:95%; color:#666;padding:2px;}
+textarea{font-size: 12px; width:440px;}
+
+.input_button a{border: 1px solid #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:3px 7px 3px 7px; background-color:#fff; margin:3px 3px 3px 3px; text-decoration:none; font-weight:bold; color:#365104;}
+.input_button a:hover {background-color: #E1E1E1;cursor: pointer;}
+

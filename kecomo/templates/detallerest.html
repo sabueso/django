@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<title>KeComo</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link href="media/css/kecomo/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="header"><a href="http://www.kecomo.com/"><img src="media/img/kecomo/logo_320.png" alt="" width="235" height="55"/></a></div>
+
+	<div class="content">    
+
+		<div class="menu"><a href="http://www.kecomo.com/">BUSCADOR</a><a href="/alta">AÑADIR NUEVO</a><a href="#">ACERCA DE</a></div>
+        
+        <div class="title_last_rests">Detalles del Restaurante</div>
+        <div class="detail_name">Nombre:<span class="detail_name_dyn">{{relegido.nombre}}</span></div>
+		<div class="detail_name">Direccion:<span class="detail_name_dyn">{{relegido.direccion}}</span></div>
+		<div class="detail_name">Poblacion:<span class="detail_name_dyn">{{relegido.poblacionasoc}}</span></div>
+		<div class="detail_name">Descripcion:<span class="detail_name_dyn">{{relegido.descripcion}}</span></div>
+		<div class="detail_name">Telefono:<span class="detail_name_dyn">{{relegido.telefono}}</span></div>
+		<div class="detail_name">GoogleMaps:<span class="detail_name_dyn"><a href="{{relegido.enlacegooglemaps}}">Ir a GoogleMaps</a></span></div><br>
+        <div class="input_button"><a href="/votar/{{relegido.id}}">Comienza a puntuar los platos!</a></div>
+                       
+	</div>
+    
+<!--	<div class="footer">&copy; Copyright 2010, Kecomo</div>
+ -->
+                      
+</div>
+
+</body>
+</html>

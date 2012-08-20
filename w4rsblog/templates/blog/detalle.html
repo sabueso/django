@@ -1,0 +1,56 @@
+<html>
+<link href="http://blog.w4rs.com/media/css/bhoja.css" rel="stylesheet" type="text/css">
+<body>
+        <div class="cabecera">
+<h1><a href="http://blog.w4rs.com/">W4rs Blog</a></h1>
+        </div>
+<p></p>
+<p></p>
+{% load comments %}
+{% autoescape off%}
+<div class="asunto">
+<h2>{{ articulo.asunto }}</h2>
+</div>
+<p></p>
+<div class="cuerpo">
+{{ articulo.cuerpo }}
+</div>
+
+<!--ahora vamos con los comentarios-->
+{% get_comment_list for articulo as comment_list %}
+<p> Comentarios: </p>
+{% for comentario in comment_list %}
+	<div class="comentario">
+	<p><a href="{{comentario.user_url}}">{{comentario.user_name}}</a> : {{comentario.comment}}</p>
+	</div>
+<p></p>
+{% endfor %}
+<!--formulario de comentarios-->
+{% get_comment_form for articulo as form %}
+<form action="{% comment_form_target %}" method="POST">
+<!--mi formulario-->
+<table>
+<tr>
+<tr><td><label for="id_name">Nombre o nick:</label>
+{{form.name}}</tr></td>
+<td><label for="id_email">Correo-e:</label>
+{{form.email}}</td></tr>
+<tr><td><label for="id_url">Sitio web:</label>
+{{form.url}}</td></tr>
+<tr><td><label for="id_url">Comentario:</label></td></tr>
+<tr><td>{{form.comment}}</tr></td>
+<tr><td>No escribir nada aqui
+{{form.honeypot}}</tr></td>
+<tr><td>{{form.content_type}}
+{{form.object_pk}}
+{{form.timestamp}}
+{{form.security_hash}}</tr></td>
+<tr><td><input type="submit" name="preview" class="submit-preview" value="Previsualizar">
+<input type="hidden" name="next" value="http://blog.w4rs.com/{{articulo.id}}">
+<input type="submit" name="post" class="submit-post" value="Enviar"></tr></td>
+</table>
+</form>
+
+{% endautoescape %}
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<title>KeComo</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link href="media/css/kecomo/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header"><a href="http://www.kecomo.com/"><img src="media/img/kecomo/logo_320.png" alt="" width="235" height="55"/></a></div>
+
+  <div class="content">
+    
+
+        <div class="menu"><a href="http://www.kecomo.com/">BUSCADOR</a><a href="/alta">AÑADIR NUEVO</a><a href="#">ACERCA DE</a></div>
+        
+<b><u>Vota platos en:</u></b><br /><br />
+Nombre: {{relegido.nombre}}<br />
+Direccion: {{relegido.direccion}}<br />
+GoogleMaps: <a href="{{relegido.enlacegooglemaps}}">Ir a GoogleMaps</a><br />
+<br />
+<hr>
+<b>Los primeros 5 mejores platos:</b><br />
+<hr>
+{%for valor in platosapromediar%}
+{{valor.hashtag}} -> {{valor.promedio}}<br />
+{%endfor%}
+<hr>
+<b>Ultimos 10 platos votados:</b><br />
+{%for plato in platos%}
+{{plato.hashtag}} -> {{plato.puntaje}} -> {{plato.comentario}}<br />
+{%endfor%}
+<hr>
+<b>Cuentanos que tal esta el ...</b>
+<form method="post"action="" >
+{%for field in formulario%}
+{{field.label_tag}}<br />
+{{field}}<br />
+{%endfor%}
+<input type="submit" value="Votar!" />
+</form>
+        
+                       
+	</div>
+    
+	<div class="footer">&copy; Copyright 2010, Kecomo</div>
+
+                      
+</div>
+
+</body>
+</html>

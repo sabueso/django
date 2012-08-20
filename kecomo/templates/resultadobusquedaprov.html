@@ -1,0 +1,9 @@
+<html>
+<center>
+Hemos encontrado los siguientes Restaurantes:<br />
+<hr>
+{%for obj in restresultados%}
+<a href="http://www.kecomo.com/votar/{{obj.id}}"><b>{{obj.nombre}}</b></a> {{obj.direccion}} | {{obj.poblacionasoc}}<br />
+{%endfor%}
+</center>
+</html>

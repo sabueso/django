@@ -1,0 +1,349 @@
+hole_off0@charset "iso-8859-2";
+
+a#b1 img{background-image:url(../../img/guars/botones/button_aldea.png);background-repeat: no-repeat;background-position: 0px 0px;width:85px;height:60px; border:0px;}
+a#b1_act img{background-image:url(../../img/guars/botones/button_aldea.png);background-repeat: no-repeat;background-position: 0px -60px;width:85px;height:60px;border:0px;}
+
+a#b2 img{background-image:url(../../img/guars/botones/button_mapa.png);background-repeat: no-repeat;background-position: 0px 0px;width:85px;height:60px; border:0px;}
+a#b2_act img{background-image:url(../../img/guars/botones/button_mapa.png);background-repeat: no-repeat;background-position: 0px -60px;width:85px;height:60px; border:0px;}
+
+a#b3 img{background-image:url(../../img/guars/botones/button_message2.png);background-repeat: no-repeat;background-position: 0px 0px;width:85px;height:60px; border:0px;}
+a#b3_act img{background-image:url(../../img/guars/botones/button_message2.png);background-repeat: no-repeat;background-position: 0px -60px;width:85px;height:60px; border:0px;}
+a#b3_new img{background-image:url(../../img/guars/botones/button_message2.png);background-repeat: no-repeat;background-position: 0px -120px;width:85px;height:60px; border:0px;}
+
+
+a#b4 img{background-image:url(../../img/guars/botones/button_report.png);background-repeat: no-repeat;background-position: 0px 0px;width:85px;height:60px; border:0px;}
+a#b4_act img{background-image:url(../../img/guars/botones/button_report.png);background-repeat: no-repeat;background-position: 0px -60px;width:85px;height:60px; border:0px;}
+a#b4_new img{background-image:url(../../img/guars/botones/button_report.png);background-repeat: no-repeat;background-position: 0px -120px;width:85px;height:60px; border:0px;}
+
+
+a#b5 img{background-image:url(../../img/guars/botones/button_stats.png);background-repeat: no-repeat;background-position: 0px 0px;width:85px;height:60px; border:0px;}
+a#b5_act img{background-image:url(../../img/guars/botones/button_stats.png);background-repeat: no-repeat;background-position: 0px -60px;width:85px;height:60px; border:0px;}
+
+a#b6 img{background-image:url(../../img/guars/botones/button_plus.png);background-repeat: no-repeat;background-position: 0px 0px;width:85px;height:60px; border:0px;}
+a#b6_act img{background-image:url(../../img/guars/botones/button_plus.png);background-repeat: no-repeat;background-position: 0px -60px;width:85px;height:60px; border:0px;}
+
+
+a#b1 img, a#b2 img, a#b3 img, a#b4 img, a#b5 img, a#b6 img{background-position:0px 0px;background-repeat:no-repeat;}
+a#b1:hover img, a#b2:hover img, a#b3:hover img, a#b4:hover img, a#b5:hover img, a#b6:hover img{background-position:0 -60px;}
+
+
+img.action_edit {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: 0px 0px;width:16px;height: 16px;}
+img.action_map {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -16px 0px;width:16px;height: 16px;}
+img.action_message {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -32px 0px;width:16px;height: 16px;}
+img.action_star {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -48px 0px;width:16px;height: 16px;}
+img.action_cancel {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -64px 0px;width:16px;height: 16px;}
+img.action_attack {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -80px 0px;width:16px;height: 16px;}
+img.action_up {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -96px 0px;width:16px;height: 16px;}
+img.action_down {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -112px 0px;width:16px;height: 16px;}
+img.action_ok {background-image: url(../../img/guars/iconos/actions.png);background-repeat: no-repeat;background-position: -128px 0px;width:16px;height: 16px;}
+
+img.events_attack1 {background-image: url(../../img/guars/iconos/events16.png);background-repeat: no-repeat;background-position: 0px 0px;width:16px;height: 16px;}
+img.events_attack2 {background-image: url(../../img/guars/iconos/events16.png);background-repeat: no-repeat;background-position: -16px 0px;width:16px;height: 16px;}
+img.events_defend1 {background-image: url(../../img/guars/iconos/events16.png);background-repeat: no-repeat;background-position: -32px 0px;width:16px;height: 16px;}
+img.events_defend2 {background-image: url(../../img/guars/iconos/events16.png);background-repeat: no-repeat;background-position: -48px 0px;width:16px;height: 16px;}
+img.events_fund {background-image: url(../../img/guars/iconos/events16.png);background-repeat: no-repeat;background-position: -64px 0px;width:16px;height: 16px;}
+
+/*---------------------------------------------------------------- TROPAS ----------*/
+
+
+img.tropas_hum_001 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: 0px 0px;width:38px;height: 38px;}
+img.tropas_hum_002 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -38px 0px;width:38px;height: 38px;}
+img.tropas_hum_003 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -76px 0px;width:38px;height: 38px;}
+img.tropas_hum_004 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -114px 0px;width:38px;height: 38px;}
+img.tropas_hum_005 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -152px 0px;width:38px;height: 38px;}
+img.tropas_hum_006 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -190px 0px;width:38px;height: 38px;}
+img.tropas_hum_007 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -228px 0px;width:38px;height: 38px;}
+img.tropas_hum_008 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -266px 0px;width:38px;height: 38px;}
+img.tropas_hum_009 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -304px 0px;width:38px;height: 38px;}
+img.tropas_hum_010 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -342px 0px;width:38px;height: 38px;}
+img.tropas_hum_011 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -380px 0px;width:38px;height: 38px;}
+img.tropas_hum_012 {background-image: url(../../img/guars/iconos/tropas_hum38.png);background-repeat: no-repeat;background-position: -418px 0px;width:38px;height: 38px;}
+
+img.tropas_elf_001 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: 0px 0px;width:38px;height: 38px;}
+img.tropas_elf_002 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -38px 0px;width:38px;height: 38px;}
+img.tropas_elf_003 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -76px 0px;width:38px;height: 38px;}
+img.tropas_elf_004 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -114px 0px;width:38px;height: 38px;}
+img.tropas_elf_005 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -152px 0px;width:38px;height: 38px;}
+img.tropas_elf_006 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -190px 0px;width:38px;height: 38px;}
+img.tropas_elf_007 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -228px 0px;width:38px;height: 38px;}
+img.tropas_elf_008 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -266px 0px;width:38px;height: 38px;}
+img.tropas_elf_009 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -304px 0px;width:38px;height: 38px;}
+img.tropas_elf_010 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -342px 0px;width:38px;height: 38px;}
+img.tropas_elf_011 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -380px 0px;width:38px;height: 38px;}
+img.tropas_elf_012 {background-image: url(../../img/guars/iconos/tropas_elf38.png);background-repeat: no-repeat;background-position: -418px 0px;width:38px;height: 38px;}
+
+img.tropas_ena_001 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: 0px 0px;width:38px;height: 38px;}
+img.tropas_ena_002 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -38px 0px;width:38px;height: 38px;}
+img.tropas_ena_003 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -76px 0px;width:38px;height: 38px;}
+img.tropas_ena_004 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -114px 0px;width:38px;height: 38px;}
+img.tropas_ena_005 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -152px 0px;width:38px;height: 38px;}
+img.tropas_ena_006 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -190px 0px;width:38px;height: 38px;}
+img.tropas_ena_007 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -228px 0px;width:38px;height: 38px;}
+img.tropas_ena_008 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -266px 0px;width:38px;height: 38px;}
+img.tropas_ena_009 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -304px 0px;width:38px;height: 38px;}
+img.tropas_ena_010 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -342px 0px;width:38px;height: 38px;}
+img.tropas_ena_011 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -380px 0px;width:38px;height: 38px;}
+img.tropas_ena_012 {background-image: url(../../img/guars/iconos/tropas_ena38.png);background-repeat: no-repeat;background-position: -418px 0px;width:38px;height: 38px;}
+
+img.tropas_orc_001 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: 0px 0px;width:38px;height: 38px;}
+img.tropas_orc_002 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -38px 0px;width:38px;height: 38px;}
+img.tropas_orc_003 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -76px 0px;width:38px;height: 38px;}
+img.tropas_orc_004 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -114px 0px;width:38px;height: 38px;}
+img.tropas_orc_005 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -152px 0px;width:38px;height: 38px;}
+img.tropas_orc_006 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -190px 0px;width:38px;height: 38px;}
+img.tropas_orc_007 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -228px 0px;width:38px;height: 38px;}
+img.tropas_orc_008 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -266px 0px;width:38px;height: 38px;}
+img.tropas_orc_009 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -304px 0px;width:38px;height: 38px;}
+img.tropas_orc_010 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -342px 0px;width:38px;height: 38px;}
+img.tropas_orc_011 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -380px 0px;width:38px;height: 38px;}
+img.tropas_orc_012 {background-image: url(../../img/guars/iconos/tropas_orc38.png);background-repeat: no-repeat;background-position: -418px 0px;width:38px;height: 38px;}
+
+
+img.materiasg_madera {background-image: url(../../img/guars/iconos/materias_g.png);background-repeat: no-repeat;background-position: 0px 0px;width:30px;height: 25px;}
+img.materiasg_barro {background-image: url(../../img/guars/iconos/materias_g.png);background-repeat: no-repeat;background-position: -30px 0px;width:30px;height: 25px;}
+img.materiasg_hierro {background-image: url(../../img/guars/iconos/materias_g.png);background-repeat: no-repeat;background-position: -60px 0px;width:30px;height: 25px;}
+img.materiasg_comida {background-image: url(../../img/guars/iconos/materias_g.png);background-repeat: no-repeat;background-position: -90px 0px;width:30px;height: 25px;}
+img.materiasg_consumo {background-image: url(../../img/guars/iconos/materias_g.png);background-repeat: no-repeat;background-position: -120px 0px;width:30px;height: 25px;}
+img.materiasg_tiempo {background-image: url(../../img/guars/iconos/materias_g.png);background-repeat: no-repeat;background-position: -150px 0px;width:30px;height: 25px;}
+
+img.materiasp_madera {background-image: url(../../img/guars/iconos/materias_p.png);background-repeat: no-repeat;background-position: 0px 0px;width:16px;height: 16px;}
+img.materiasp_barro {background-image: url(../../img/guars/iconos/materias_p.png);background-repeat: no-repeat;background-position: -16px 0px;width:16px;height: 16px;}
+img.materiasp_hierro {background-image: url(../../img/guars/iconos/materias_p.png);background-repeat: no-repeat;background-position: -32px 0px;width:16px;height: 16px;}
+img.materiasp_comida {background-image: url(../../img/guars/iconos/materias_p.png);background-repeat: no-repeat;background-position: -48px 0px;width:16px;height: 16px;}
+img.materiasp_consumo {background-image: url(../../img/guars/iconos/materias_p.png);background-repeat: no-repeat;background-position: -64px 0px;width:16px;	height: 16px;}
+img.materiasp_tiempo {background-image: url(../../img/guars/iconos/materias_p.png);background-repeat: no-repeat;background-position: -80px 0px;width:16px;height: 16px;}
+
+
+
+/*---------------------------------------------------------------- POSICION MATERIAS ----------*/
+
+
+#materias { float:left; position:relative;left:15px;top:-4px;width:700px;height:430px;z-index:1;}
+
+
+/*---------------------------------------------------------------- CLASES MATERIAS ----------*/
+
+
+.mat_4445{background-image:url(../../img/guars/aldeas/mat_4445.gif);}
+.mat_3338{background-image:url(../../img/guars/aldeas/mat_3338.gif);}
+.mat_11114{background-image:url(../../img/guars/aldeas/mat_11114.gif);}
+
+
+/*---------------------------------------------------------------- POSICION BASES ----------*/
+
+
+#base {position:relative;left:0px;top:0px;width:700px;height:430px;z-index:50;}
+
+
+/*---------------------------------------------------------------- CLASES BASES ----------*/
+
+
+.hum{background-image:url(../../img/guars/aldeas/ald_hum.gif);}
+.orc{background-image:url(../../img/guars/aldeas/ald_orc.gif);}
+.elf{background-image:url(../../img/guars/aldeas/ald_elf.gif);}
+.ena{background-image:url(../../img/guars/aldeas/ald_ena.gif);}
+.tot{background-image:url(../../img/guars/aldeas/ald_tot.gif);}
+
+
+/*---------------------------------------------------------------- POSICIONES TORREONES ----------*/
+
+#torreon1 {position:relative;left:140px;top:50px;width:55px;height:90px;z-index:200;}
+#torreon2 {position:relative;left:493px;top:-40px;width:55px;height:90px;z-index:200;}
+#torreon3 {position:relative;left:165px;top:64px;width:55px;height:90px;z-index:200;}
+#torreon4 {position:relative;left:469px;top:-25px;width:55px;height:90px;z-index:200;}
+
+/*---------------------------------------------------------------- CLASES TORREONES ----------*/
+
+
+.torrehum_izqsup{background-image:url(../../img/guars/edificios/torrehum_izqsup.png);}
+.torrehum_dersup{background-image:url(../../img/guars/edificios/torrehum_dersup.png);}
+.torrehum_izqinf{background-image:url(../../img/guars/edificios/torrehum_izqinf.png);}
+.torrehum_derinf{background-image:url(../../img/guars/edificios/torrehum_derinf.png);}
+
+.torreelf_izqsup{background-image:url(../../img/guars/edificios/torreelf_izqsup.png);}
+.torreelf_dersup{background-image:url(../../img/guars/edificios/torreelf_dersup.png);}
+.torreelf_izqinf{background-image:url(../../img/guars/edificios/torreelf_izqinf.png);}
+.torreelf_derinf{background-image:url(../../img/guars/edificios/torreelf_derinf.png);}
+
+.torreena_izqsup{background-image:url(../../img/guars/edificios/torreena_izqsup.png);}
+.torreena_dersup{background-image:url(../../img/guars/edificios/torreena_dersup.png);}
+.torreena_izqinf{background-image:url(../../img/guars/edificios/torreena_izqinf.png);}
+.torreena_derinf{background-image:url(../../img/guars/edificios/torreena_derinf.png);}
+
+.torreorc_izqsup{background-image:url(../../img/guars/edificios/torreorc_izqsup.png);}
+.torreorc_dersup{background-image:url(../../img/guars/edificios/torreorc_dersup.png);}
+.torreorc_izqinf{background-image:url(../../img/guars/edificios/torreorc_izqinf.png);}
+.torreorc_derinf{background-image:url(../../img/guars/edificios/torreorc_derinf.png);}
+
+
+/*---------------------------------------------------------------- POSICIONES EDIFICIOS ----------*/
+
+#edpos_01{left:30px;top:155px;height: 95px;width: 85px;position: absolute;z-index:114;}
+#edpos_02{left:70px;top:92px;height: 95px;width: 85px;position: absolute;z-index:110;}
+#edpos_03{left:190px;top:33px;height: 95px;width: 85px;position: absolute;z-index:106;}
+#edpos_04{left:260px;top:6px;height: 95px;width: 85px;position: absolute;z-index:104;}
+#edpos_05{left:345px;top:5px;height: 95px;width: 85px;position: absolute;z-index:103;}
+#edpos_06{left:415px;top:40px;height: 95px;width: 85px;position: absolute;z-index:105;}
+#edpos_07{left:530px;top:95px;height: 95px;width: 85px;position: absolute;z-index:109;}
+#edpos_08{left:590px;top:155px;height: 95px;width: 85px;position: absolute;z-index:113;}
+#edpos_09{left:100px;top:190px;height: 95px;width: 85px;position: absolute;z-index:116;}
+#edpos_10{left:165px;top:137px;height: 95px;width: 85px;position: absolute;z-index:112;}
+#edpos_11{left:250px;top:83px;height: 95px;width: 85px;position: absolute;z-index:108;}
+#edpos_12{left:365px;top:78px;height: 95px;width: 85px;position: absolute;z-index:107;}
+#edpos_13{left:445px;top:135px;height: 95px;width: 85px;position: absolute;z-index:111;}
+#edpos_14{left:525px;top:188px;height: 95px;width: 85px;position: absolute;z-index:115;}
+#edpos_15{left:221px;top:250px;height: 95px;width: 85px;position: absolute;z-index:118;}
+#edpos_16{left:265px;top:292px;height: 95px;width: 85px;position: absolute;z-index:120;}
+#edpos_17{left:350px;top:291px;height: 95px;width: 85px;position: absolute;z-index:119;}
+#edpos_18{left:395px;top:247px;height: 95px;width: 85px;position: absolute;z-index:117;}
+#edpos_19{left:309px;top:140px;height: 95px;width: 85px;position: absolute;z-index:121;}
+
+#edpos_20{left:288px;top:178px;height: 83px;width: 126px;position: absolute;z-index:101;}
+
+#muralla{position:absolute;left:0px;top:0px;width:700px;height:430px; z-index:0;}
+
+
+.verticalalign{height: 70px;width: 85px;position: absolute;top:25px;}
+.verticalalign2{height: 70px;width: 85px;position: absolute;top:10px;}
+.verticalalign3{height: 40px;width: 85px;position: absolute;top:55px;}
+.verticalalign4{height: 40px;width: 126px;position: absolute;top:40px;}
+
+
+/*---------------------------------------------------------------- CLASE EDIFICIOS ----------*/
+
+
+.ed_05{background-image:url(../../img/guars/edificios/ed_05_p.png);}	/*Esfera Vital*/
+.ed_06{background-image:url(../../img/guars/edificios/ed_06_p.png);}	/*almacen_p*/
+.ed_35{background-image:url(../../img/guars/edificios/ed_35_p.png);}	/*almacengrande_p*/
+.ed_10{background-image:url(../../img/guars/edificios/ed_10_p.png);}	/*cuartel_p*/
+.ed_24{background-image:url(../../img/guars/edificios/ed_24_p.png);}	/*cuartelgrande_p*/
+.ed_26{background-image:url(../../img/guars/edificios/ed_26_p.png);}	/*casaarquitecto_p*/
+.ed_11{background-image:url(../../img/guars/edificios/ed_11_p.png);}	/*casaconstructor_p*/
+.ed_19{background-image:url(../../img/guars/edificios/ed_19_p.png);}	/*mercado_p*/
+.ed_23{background-image:url(../../img/guars/edificios/ed_23_p.png);}	/*casacomercio_p*/
+.ed_22{background-image:url(../../img/guars/edificios/ed_22_p.png);}	/*templo_p*/
+.ed_07{background-image:url(../../img/guars/edificios/ed_07_p.png);}	/*granero_p*/
+.ed_34{background-image:url(../../img/guars/edificios/ed_34_p.png);}	/*granerogrande_p*/
+.ed_20{background-image:url(../../img/guars/edificios/ed_20_p.png);}	/*establo_p*/
+.ed_25{background-image:url(../../img/guars/edificios/ed_25_p.png);}	/*establogrande_p*/
+.ed_36{background-image:url(../../img/guars/edificios/ed_36_p.png);}	/*campodetiro_p*/
+.ed_37{background-image:url(../../img/guars/edificios/ed_37_p.png);}	/*campodetiro_p*/
+.ed_38{background-image:url(../../img/guars/edificios/ed_38_p.png);}	/*campodetiro_p*/
+.ed_39{background-image:url(../../img/guars/edificios/ed_39_p.png);}	/*campodetiro_p*/
+.ed_28{background-image:url(../../img/guars/edificios/ed_28_p.png);}	/*refugio_p*/
+.ed_29{background-image:url(../../img/guars/edificios/ed_29_p.png);}	/*refugio_p*/
+.ed_12{background-image:url(../../img/guars/edificios/ed_12_p.png);}	/*aserradero_p*/
+.ed_13{background-image:url(../../img/guars/edificios/ed_13_p.png);}	/*hornoarcilla_p*/
+.ed_14{background-image:url(../../img/guars/edificios/ed_14_p.png);}	/*fundicion_p*/
+.ed_15{background-image:url(../../img/guars/edificios/ed_15_p.png);}	/*bodega_p*/
+.ed_18{background-image:url(../../img/guars/edificios/ed_18_p.png);}	/*campoentrenamiento_p*/
+.ed_16{background-image:url(../../img/guars/edificios/ed_16_p.png);}	/*armeria_p*/
+.ed_21{background-image:url(../../img/guars/edificios/ed_21_p.png);}	/*armeriaasedio_p*/
+.ed_09{background-image:url(../../img/guars/edificios/ed_09_p.png);}	/*casaclan_p*/
+.ed_17{background-image:url(../../img/guars/edificios/ed_17_p.png);}	/*escuderia_p*/
+.ed_27{background-image:url(../../img/guars/edificios/ed_27_p.png);}	/*palacio_p*/
+.ed_40{background-image:url(../../img/guars/edificios/ed_40_p.png);}	/*taberna_p*/
+.ed_08{background-image:url(../../img/guars/edificios/ed_08_p.png);}	/*plazaejercito_p*/
+
+
+/*---------------------------------------------------------------- POSICION MURALLAS ----------*/
+
+#muralla_link {position:absolute;left:0px;top:0px;width:700px;height:430px; border:0px solid #000;}
+
+
+/*---------------------------------------------------------------- CLASES MURALLAS ----------*/
+
+.ed_30{background-image:url(../../img/guars/edificios/mur_humana.png);}
+.ed_31{background-image:url(../../img/guars/edificios/mur_elfa.png);}
+.ed_32{background-image:url(../../img/guars/edificios/mur_enana.png);}
+.ed_33{background-image:url(../../img/guars/edificios/mur_orco.png);}
+
+
+/*---------------------------------------------------------------- POSICION FORATS ----------*/
+
+.holepos_1 {position:absolute;left:19px;top:323px;width:20px;height:20px;}
+.holepos_2 {position:absolute;left:61px;top:345px;width:20px;height:20px;}
+.holepos_3 {position:absolute;left:81px;top:400px;width:20px;height:20px;}
+.holepos_4 {position:absolute;left:111px;top:365px;width:20px;height:20px;}
+.holepos_5 {position:absolute;left:160px;top:394px;width:20px;height:20px;}
+			
+.holepos_6 {position:absolute;left:36px;top:18px;width:20px;height:20px;}
+.holepos_7 {position:absolute;left:150px;top:23px;width:20px;height:20px;}
+.holepos_8 {position:absolute;left:21px;top:82px;width:20px;height:20px;}
+.holepos_9 {position:absolute;left:83px;top:55px;width:20px;height:20px;}
+			
+.holepos_10 {position:absolute;left:526px;top:17px;width:20px;height:20px;}
+.holepos_11 {position:absolute;left:665px;top:26px;width:20px;height:20px;}
+.holepos_12 {position:absolute;left:588px;top:31px;width:20px;height:20px;}
+.holepos_13 {position:absolute;left:645px;top:71px;width:20px;height:20px;}
+			
+.holepos_14 {position:absolute;left:510px;top:395px;width:20px;height:20px;}
+.holepos_15 {position:absolute;left:557px;top:379px;width:20px;height:20px;}
+.holepos_16 {position:absolute;left:667px;top:318px;width:20px;height:20px;}
+.holepos_17 {position:absolute;left:626px;top:359px;width:20px;height:20px;}
+
+/*---------------------------------------------------------------- CLASES FORATS ----------*/
+
+
+img.hole_off0 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: 0px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off1 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -20px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off2 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -40px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off3 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -60px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off4 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -80px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off5 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -100px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off6 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -120px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off7 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -140px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off8 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -160px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off9 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -180px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off10 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -200px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off11 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -220px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off12 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -240px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off13 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -260px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off14 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -280px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off15 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -300px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off16 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -320px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off17 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -340px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off18 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -360px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off19 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -380px 0px;width:20px;height: 20px; border:0px;}
+img.hole_off20 {background-image: url(../../img/guars/iconos/holes_off.png);background-repeat: no-repeat;background-position: -400px 0px;width:20px;height: 20px; border:0px;}
+
+img.hole_on0 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: 0px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on1 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -20px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on2 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -40px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on3 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -60px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on4 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -80px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on5 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -100px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on6 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -120px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on7 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -140px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on8 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -160px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on9 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -180px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on10 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -200px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on11 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -220px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on12 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -240px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on13 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -260px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on14 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -280px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on15 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -300px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on16 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -320px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on17 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -340px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on18 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -360px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on19 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -380px 0px;width:20px;height: 20px; border:0px;}
+img.hole_on20 {background-image: url(../../img/guars/iconos/holes_on.png);background-repeat: no-repeat;background-position: -400px 0px;width:20px;height: 20px; border:0px;}
+
+
+
+
+
+/*---------------------------------------------------------------- POSICION BASES ----------*/
+
+
+/*---------------------------------------------------------------- LINKS EDIFICIOS----------*/
+
+.link_edificio{height: 70px;width: 85px;}
+.link_plaza{height: 50px;width: 126px;}
+/*.link_torreones{height: 73px;width: 40px;}*/
+.link_torreones{height: 90px;width: 55px;}
+
+a.link_edificio:hover {background-image:url(../../img/guars/edificios/brillo.png);background-attachment: scroll;background-repeat: no-repeat;background-position: center bottom;}
+
+.link_hueco{height: 40px;width: 85px;}
+

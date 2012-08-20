@@ -1,0 +1,31 @@
+<html>
+<link href="http://blog.w4rs.com/media/css/bhoja.css" rel="stylesheet" type="text/css">
+<body>
+	<div class="cabecera">
+<h1><a href="http://blog.w4rs.com/">W4rs Blog</a></h1>
+	</div>
+<p></p>
+<p></p>
+<!--comentario-->
+{% load comments %}
+{% autoescape off%}
+{% if recuentodeobjetos %}
+{% for objeto in recuentodeobjetos %}
+<div class="asunto">
+<h2>  {{ objeto.asunto }}  </h2>
+</div>
+por {{objeto.propietario}} , el {{objeto.fecha}} ...
+	<div class="cuerpo">
+<p> {{ objeto.cuerpo|truncatewords:130}} </p>
+	</div>
+<!--comentarios-->
+{% get_comment_count for objeto as comentarios  %}
+<h3><a href="http://blog.w4rs.com/{{objeto.id}}">Continuar leyendo &rarr;</a> | Comentarios  {{comentarios}}</h3>
+{% endfor %}
+{% else %}
+<p>!No hay articulos disponibles¡ ¿Todavia no has comenzado a escribir?</p>
+{% endif %}
+{% endautoescape %}
+<center><a href="http://djangopony.com/" class="ponybadge" title="Magic! Ponies! Django! Whee!"><img src="http://media.djangopony.com/img/small/badge.png" alt="pony powered" border="0" id="ponny"></a></center>
+</body>
+</html>

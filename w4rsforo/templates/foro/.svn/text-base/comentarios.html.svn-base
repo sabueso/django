@@ -1,0 +1,23 @@
+<html>
+<link href="../media/css/styles.css" rel="stylesheet" type="text/css" />
+<title>Foro W4RS</title>
+{% autoescape off%}
+	<title>
+		Test de comentarios! CO-MEN-TA-RIOS
+	</title>
+<center>
+	<b>Foro W4rs</b>||<b>Co-men-ta-rios</b></p>
+	
+<p>Usuario visualizando:</p> {{ user.username }}
+<p>Esc00ribe tu comentario!!!!.</p>
+<form method="post" action="">
+<table>
+	{{ formset }}
+</table>
+<input type="submit">
+</form>
+
+</center>
+{% endautoescape %}
+</html>
+

@@ -1,0 +1,7 @@
+BROKER_HOST = "localhost"
+BROKER_PORT = 5672
+BROKER_USER = "test"
+BROKER_PASSWORD = "password"
+BROKER_VHOST = "vhost"
+CELERY_RESULT_BACKEND = "amqp"
+CELERY_IMPORTS = ("tasks", )

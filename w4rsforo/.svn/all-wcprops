@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/w4rsforo/!svn/ver/1/
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/w4rsforo/!svn/ver/1/manage.py
+END
+media
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/w4rsforo/!svn/ver/1/media
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/w4rsforo/!svn/ver/1/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/w4rsforo/!svn/ver/1/settings.py
+END
+cambio-enlaces.sh
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/w4rsforo/!svn/ver/1/cambio-enlaces.sh
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/w4rsforo/!svn/ver/4/urls.py
+END

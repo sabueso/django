@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<title>KeComo</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link href="media/css/kecomo/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="header"><a href="http://www.kecomo.com/"><img src="media/img/kecomo/logo_320.png" alt="" width="235" height="55"/></a></div>
+
+	<div class="content">    
+
+		<div class="menu"><a href="http://www.kecomo.com/">BUSCADOR</a><span class="menu2"><a href="/alta">AÑADIR NUEVO</a></span><a href="#">ACERCA DE</a></div>        
+
+	<form method="post"action="" >    
+		<div class="formfields_alta_title">Nombre del Restaurante</div>
+        <div class="formfields_alta">{{formset.nombre}}</div>
+		<div class="formfields_alta_title">Dirección</div>
+        <div class="formfields_alta"><!--{{formset.direccion.label}}<br> -->{{formset.direccion}}</div>
+		<div class="formfields_alta_title">Población</div>
+        <div class="formfields_alta"><!--{{formset.poblacionasoc.label}}<br> -->{{formset.poblacionasoc}}</div>
+		<div class="formfields_alta_title">Correo Electrónico</div>
+		<div class="formfields_alta"><!--{{formset.correoe.label}} -->{{formset.correoe}}</div>
+		<div class="formfields_alta_title">Longitud</div>
+		<div class="formfields_alta"><!--{{formset.lon.label}} -->{{formset.lon}}</div>
+		<div class="formfields_alta_title">Latitud</div>  
+		<div class="formfields_alta"><!--{{formset.lat.label}} -->{{formset.lat}}</div>
+  		<div class="formfields_alta_title">Teléfono</div>
+		<div class="formfields_alta"><!--{{formset.telefono.label}} -->{{formset.telefono}}</div>
+		<div class="formfields_alta_title">Enlace a Google Maps</div>
+		<div class="formfields_alta"><!--{{formset.enlacegooglemaps.label}} -->{{formset.enlacegooglemaps}}</div>
+		<div class="search"><input type="submit" value="Crear" /></div>            
+    </form>        
+                       
+	</div>
+    
+<!--	<div class="footer">&copy; Copyright 2010, Kecomo</div>
+ -->                      
+</div>
+
+</body>
+</html>

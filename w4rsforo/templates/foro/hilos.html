@@ -1,0 +1,247 @@
+<html>
+<link href="../../../media/css/styles.css" rel="stylesheet" type="text/css" />
+<title>Foro W4RS</title>
+{% autoescape off%}
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="marginbottom5 box_stones">
+  <tr>
+    <td colspan="3" align="center"><table width="900" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="3"><a href="http://foro.w4rs.com/"><img src="../../../media/img/header.png" width="900" height="75" border="0"></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td colspan="3" class="text11 brown_text bold">Si es tu primera visita a los foros no te olvides de revisar el <a href="#" class="bold red_hard movement">FAQ</a>.  Tal vez tengas que <a href="#" class="bold red_hard movement">registrarte</a> antes de que puedas participar: da clic en la liga de registrarse para continuar.  Para comenzar a ver los mensajes selecciona el foro que deseas de los que aparecen abajo.</td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td height="25" align="right">{% if user.is_authenticated %} <a href="http://foro.w4rs.com/desloguearse" class="movement red_hard text12 bold paddingright10">Cerrar sesión</a> {% else %}
+      <form action="/login/" method="post" accept-charset="utf-8" id="sin_margen">
+        <label for="username" class="text12 bold brown_text">Username:</label>
+        <input type="text" name="username" value="" id="username" class="text12 brown_text"/>
+        <label for="password" class="text12 bold brown_text paddingleft5">Password:</label>
+        <input type="password" name="password" value="" id="password"  class="text12 brown_text"/>
+        <input type="submit" class="text11" value="Login">
+      </form>
+      {% endif %}</td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+
+<table width="900" border="0" align="center" cellpadding="5" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td class="text12 brown_text bold">Foro W4rs &gt; Subforo &gt; Hilos &gt;</td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="marginbottom5">
+      <tr>
+        <td width="11%" bgcolor="#CCB382" class="text15 bold brown_build paddingleft10">Estado</td>
+        <td width="44%" bgcolor="#CCB382" class="text15 bold brown_build">Hilos</td>
+        <td width="25%" bgcolor="#CCB382" class="text15 bold brown_build">Último comentario</td>
+        <td width="10%" align="center" bgcolor="#CCB382" class="text15 bold brown_build">Respuestas</td>
+        <td width="10%" align="center" bgcolor="#CCB382" class="text15 bold brown_build">Vistas</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+
+{% if hilo %}
+{% for objeto in hilo %}
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+      <tr>
+        <td width="11%"><table border="0" cellpadding="1" cellspacing="0">
+          <tr>
+            <td width="25" align="center"><table border="0" cellpadding="0" cellspacing="1" bgcolor="#ccb382">
+              <tr>
+                  <td width="25" height="24" align="center" bgcolor="#e3d5ba"><img src="../../../media/img/esfera_fuego.jpg"></td>
+                </tr>
+            </table></td>
+            <td width="25" align="center"><table border="0" cellpadding="0" cellspacing="1" bgcolor="#ccb382">
+                <tr>
+                  <td width="25" height="24" align="center" bgcolor="#e3d5ba">{% if objeto.abierto %} <img src="../../../media/img/star.png" title="Hilo abierto"> {%else%} <img src="../../../media/img/lock.png" title="Hilo cerrado"> {%endif%}</td>
+                </tr>
+              </table></td>
+            <td width="25" align="center"><table border="0" cellpadding="0" cellspacing="1" bgcolor="#ccb382">
+              <tr>
+                <td width="25" height="24" align="center" bgcolor="#e3d5ba"><img src="../../../media/img/fire.png"></td>
+                </tr>
+            </table></td>
+            </tr>
+        </table></td>
+        <td width="44%"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="20" class="text13 bold"><a href=http://foro.w4rs.com/{{objeto.subfororel.foroprincipal.id}}/{{objeto.subfororel.id}}/{{objeto.id}} class="movement red_hard">{{ objeto.titulo }}</a></td>
+            </tr>
+          <tr>
+            <td class="text11 brown_text">Creado por: <strong>{{objeto.usuario}}</strong></td>
+            </tr>
+        </table></td>
+        <td width="25%"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="20" class="text11 brown_soft4">{{objeto.fecha}}</td>
+          </tr>
+          <tr>
+            <td class="text11 brown_text"><strong>{{objeto.usuario}}</strong></td>
+	          </tr>
+        </table></td>
+        <td width="10%" align="center" class="text12 brown_text">4</td>
+        <td width="10%" align="center" class="text12 brown_text">280</td>
+      </tr>
+      </table>
+</table>
+{% endfor %}
+
+       {% if user.is_authenticated %}
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="marginbottom5">
+      <tr>
+        <td bgcolor="#CCB382" class="text15 bold brown_build paddingleft10">Crea un nuevo hilo</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><form method="post" action="" id="sin_margen"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>{{formset.titulo}}</td>
+      </tr>
+      <tr>
+            <td>{{formset.cuerpo}}
+            </td>
+       </tr>
+      <tr>
+        <td><input type="submit" class="text11"></td>
+      </tr>
+    </table>
+    </form>
+</table>
+
+                
+                {% endif %}
+
+                <table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+                  <tr>
+                    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+                  </tr>
+                </table>
+{% else %}
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+      <tr>
+        <td width="5%" align="center" class="text14 bold brown_build">No hay hilos creados. Crea tu hilo ahora</td>
+      </tr>
+    </table>
+  </table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+
+ {% if user.is_authenticated %}
+ <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+     <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+   </tr>
+ </table>
+<form method="post" action="" id="sin_margen">
+  <table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="marginbottom5">
+      <tr>
+        <td bgcolor="#CCB382" class="text15 bold brown_build paddingleft10">Crea un nuevo hilo</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+  <table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+    <tr>
+      <td colspan="3"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr>
+          <td>{{formset.titulo}}</td>
+          </tr>
+        <tr>
+          <td>{{formset.cuerpo}} </td>
+          </tr>
+        <tr>
+          <td><input type="submit" class="text11"></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+{% endif %}
+{% endif %}</form>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../../../media/img/background_table_sup.png" width="900" height="9"></td>
+  </tr>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="box_forums">
+  <tr>
+    <td><table border="0" cellpadding="2" cellspacing="0">
+      <tr>
+        <td width="40" align="center"><img src="../../../media/img/esfera_fuego.jpg"></td>
+        <td class="text12 brown_text bold">El foro tiene nuevos posts</td>
+        <td width="40" align="center"><img src="../../../media/img/esfera_fuego2.jpg"></td>
+        <td class="text12 brown_text bold">  El foro no tiene nuevos posts</td>
+        </tr>
+    </table>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" class="marginbottom10">
+  <tr>
+    <td><img src="../../../media/img/background_table_inf.png" width="900" height="9"></td>
+  </tr>
+</table>
+{% endautoescape %}
+</html>
+

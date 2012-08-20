@@ -1,0 +1,22 @@
+<html>
+{% autoescape off%}
+<center>
+	<u><b>Foro W4rs</b></u>
+{% if recuentodeobjetos %}
+{% for objeto in recuentodeobjetos %}
+<p>[<a href=http://localhost:8000/foro/{{objeto.titulo}}><b>{{ objeto.titulo }}</b></a>  ||| {{objeto.descripcion}} ||| {{objeto.fecha}} ||| ]</p>
+
+{% endfor %}
+{% else %}
+<p>!No hay articulos Foros disponibles¡ Crea tu foro ahora!!!</p>
+{% endif %}
+</center>
+{% endautoescape %}
+        {% if user.is_authenticated %}
+		<center><a href="http://localhost:8000/foro/desloguearse">Logout</a></center>
+        {% else %}
+		<center><a href="http://localhost:8000/foro/login">Autentificarse</a></center>
+
+        {% endif %}
+</html>
+

@@ -1,0 +1,39 @@
+@charset "iso-8859-2";
+body, html {margin:0; padding:0; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; background-color: #ECECEC; font-size: 11px; color:#333; /*width:320px;*/}
+
+/*---------------------------------------------------------------- DIVS ----------*/
+
+.container {width: 100%; min-width: 320px;background: #FFF;margin: 0 auto;}
+	.content {padding: 0px;background: #fff;}
+
+.header {background-color:#ECECEC; border: 0px solid #ccc; padding: 10px 0px 5px 0px; margin:0px 0px 10px 0px; text-align:center;}
+
+.menu {background-color:#fff; margin:0px 0px 15px 0px; text-align:center;}
+	.menu a{border: 1px solid #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:3px 5px 3px 5px; background-color:#ECECEC; margin:3px 3px 3px 3px; text-decoration:none; font-weight:bold; color:#365104;}
+	.menu a:hover{background-color:#fff;}
+	
+.filtro {background-color:#fff; text-align:center;border: 0px solid #CCC;}
+	.provpob {background-color:#fff; border: 0px solid #CCC; display:block;margin:0px 0px 3px 0px;}
+	.search {background-color:#fff; border: 0px solid #CCC; display:block;margin:15px 0px 15px 0px;}
+	
+
+.last_rests {background-color:#fff; text-align:center;border: 0px solid #CCC; margin:0px 0px 20px 0px;}
+		.title_last_rests {font-weight:bold; color:#365104;font-size: 13px;background-color:#ECECEC;padding:3px 5px 3px 5px; margin:0px 0px 10px 0px;}
+		.last_rests_icon {border: 1px solid #ccc;padding:1px 1px 1px 1px; background-color:white; margin:0px 7px 0px 0px;}
+		.name_last_rests a{font-weight:bold; color:#333;font-size: 13px;padding:0px 5px 3px 0px; text-decoration:none;}
+		.prov_last_rests {color:#333;font-size: 12px;padding:0px 0px 0px 0px;}
+
+
+.footer {background-color:#ECECEC; text-align:center;border: 0px solid #CCC; padding:5px 0px 5px 0px;}
+
+
+
+
+
+img {border:0px;}
+img.valign {vertical-align: middle;padding-bottom:2px;} 
+
+.input_select {font-size: 12px; width:240px;}
+.input_text {font-size: 12px; width:235px;}
+input[type='submit'] {background: #FFFFFF;border: 1px solid #999;font-size: 12px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;padding:2px 5px 2px 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+input[type='submit']:hover {background-color: #E1E1E1;cursor: pointer;}
